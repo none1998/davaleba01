@@ -19,16 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8aecc4b-ca40-462f-82ff-ace3c1ec860f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/edit.blade.php" afterDir="false" />
+    <list default="true" id="f8aecc4b-ca40-462f-82ff-ace3c1ec860f" name="Default Changelist" comment="added CRUD operations">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Movie.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Movie.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/layout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/movie.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/movie.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/movies.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/movies.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +161,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Desktop/davaleba01" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -177,7 +169,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.startup.tasks" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -191,7 +183,7 @@
       <recent name="$PROJECT_DIR$/resources/views" />
     </key>
   </component>
-  <component name="RunManager" selected="PHP Script.Serve">
+  <component name="RunManager" selected="PHPUnit.phpunit.xml">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
@@ -225,8 +217,17 @@
       <workItem from="1602515467871" duration="1218000" />
       <workItem from="1602596905104" duration="599000" />
       <workItem from="1602864148364" duration="2627000" />
-      <workItem from="1603012698040" duration="15847000" />
+      <workItem from="1603012698040" duration="16238000" />
+      <workItem from="1603040980543" duration="461000" />
     </task>
+    <task id="LOCAL-00001" summary="added CRUD operations">
+      <created>1603038795849</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603038795850</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,6 +245,10 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added CRUD operations" />
+    <option name="LAST_COMMIT_MESSAGE" value="added CRUD operations" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="141" y="27" width="1084" height="697" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601404909578">
       <screen x="0" y="27" width="1366" height="697" />
@@ -253,30 +258,34 @@
       <screen x="0" y="27" width="1366" height="697" />
     </state>
     <state x="466" y="133" width="424" height="491" key="FileChooserDialogImpl/0.27.1366.697@0.27.1366.697" timestamp="1603038453263" />
-    <state width="1318" height="158" key="GridCell.Tab.0.bottom" timestamp="1603018491654">
+    <state width="1318" height="158" key="GridCell.Tab.0.bottom" timestamp="1603041386918">
       <screen x="0" y="27" width="1366" height="697" />
     </state>
-    <state width="1318" height="158" key="GridCell.Tab.0.bottom/0.27.1366.697@0.27.1366.697" timestamp="1603018491654" />
-    <state width="1318" height="158" key="GridCell.Tab.0.center" timestamp="1603018491653">
+    <state width="1318" height="158" key="GridCell.Tab.0.bottom/0.27.1366.697@0.27.1366.697" timestamp="1603041386918" />
+    <state width="1318" height="158" key="GridCell.Tab.0.center" timestamp="1603041386917">
       <screen x="0" y="27" width="1366" height="697" />
     </state>
-    <state width="1318" height="158" key="GridCell.Tab.0.center/0.27.1366.697@0.27.1366.697" timestamp="1603018491653" />
-    <state width="1318" height="158" key="GridCell.Tab.0.left" timestamp="1603018491652">
+    <state width="1318" height="158" key="GridCell.Tab.0.center/0.27.1366.697@0.27.1366.697" timestamp="1603041386917" />
+    <state width="1318" height="158" key="GridCell.Tab.0.left" timestamp="1603041386916">
       <screen x="0" y="27" width="1366" height="697" />
     </state>
-    <state width="1318" height="158" key="GridCell.Tab.0.left/0.27.1366.697@0.27.1366.697" timestamp="1603018491652" />
-    <state width="1318" height="158" key="GridCell.Tab.0.right" timestamp="1603018491653">
+    <state width="1318" height="158" key="GridCell.Tab.0.left/0.27.1366.697@0.27.1366.697" timestamp="1603041386916" />
+    <state width="1318" height="158" key="GridCell.Tab.0.right" timestamp="1603041386917">
       <screen x="0" y="27" width="1366" height="697" />
     </state>
-    <state width="1318" height="158" key="GridCell.Tab.0.right/0.27.1366.697@0.27.1366.697" timestamp="1603018491653" />
+    <state width="1318" height="158" key="GridCell.Tab.0.right/0.27.1366.697@0.27.1366.697" timestamp="1603041386917" />
     <state x="427" y="95" width="501" height="568" key="NewPhpClassDialog" timestamp="1601912048908">
       <screen x="0" y="27" width="1366" height="697" />
     </state>
     <state x="427" y="95" width="501" height="568" key="NewPhpClassDialog/0.27.1366.697@0.27.1366.697" timestamp="1601912048908" />
-    <state x="179" y="27" width="997" height="697" key="SettingsEditor" timestamp="1601400766057">
+    <state x="179" y="27" width="997" height="697" key="SettingsEditor" timestamp="1603041441021">
       <screen x="0" y="27" width="1366" height="697" />
     </state>
-    <state x="179" y="27" width="997" height="697" key="SettingsEditor/0.27.1366.697@0.27.1366.697" timestamp="1601400766057" />
+    <state x="179" y="27" width="997" height="697" key="SettingsEditor/0.27.1366.697@0.27.1366.697" timestamp="1603041441021" />
+    <state x="183" y="76" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1603038881740">
+      <screen x="0" y="27" width="1366" height="697" />
+    </state>
+    <state x="183" y="76" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1366.697@0.27.1366.697" timestamp="1603038881740" />
     <state x="476" y="290" width="413" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603036871412">
       <screen x="0" y="27" width="1366" height="697" />
     </state>
