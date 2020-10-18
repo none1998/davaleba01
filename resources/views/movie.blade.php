@@ -56,7 +56,7 @@
 
                             <div class="ml-12">
                                 <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    <img src="{{ $movie->image }}" alt="Image" width="20%"/>
+                                    <img src="{{ $movie->image }}" alt="Image" width="45%"/>
                                     <p>Year: {{$movie->year}}</p>
                                     <p>Rating: {{$movie->rating}}</p>
                                     <p>Description: {{$movie->description}}</p>

@@ -20,8 +20,12 @@ Route::get('/', function () {
 
 Route::get('/movies', [\App\Http\Controllers\PostController::class, 'index']);
 Route::get('/movies/create', [\App\Http\Controllers\PostController::class, 'create'])->name('movies.create');
-Route::get('/movies/{id}', [\App\Http\Controllers\PostController::class, 'show']);
+Route::get('/movies/{movie}', [\App\Http\Controllers\PostController::class, 'show']);
 Route::post('/movies/save_movie', [\App\Http\Controllers\PostController::class, 'save'])->name('movies.save');
+Route::get('/movies/{movie}/edit', [\App\Http\Controllers\PostController::class, 'edit'])->name('movies.edit');
+Route::put('/movies/{movie}/update', [\App\Http\Controllers\PostController::class, 'update'])->name('movies.update');
+Route::delete('/movies/{movie}/delete', [\App\Http\Controllers\PostController::class, 'delete'])->name('movies.delete');
+
 
 //Route::get('/movies', function () {
 //    //get movies from database
