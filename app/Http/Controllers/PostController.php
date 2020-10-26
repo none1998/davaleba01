@@ -2,6 +2,7 @@
 
 
 namespace App\Http\Controllers;
+use App\Http\Requests\SavePostRequest;
 use App\Models\Movie;
 use Illuminate\Http\Request;
 
@@ -20,7 +21,7 @@ class PostController extends Controller
         return view('create');
     }
 
-    public function save(Request $request){
+    public function save(SavePostRequest $request){
         $movie = new Movie($request->all());
         $movie->save();
         return redirect()->back();

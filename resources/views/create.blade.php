@@ -1,11 +1,24 @@
 @extends('layout.layout')
 @section('content')
+
     <div class="container" align="center" style="margin: 120px 0">
+{{--        @if($errors->any())--}}
+{{--            @foreach($errors->all() as $error)--}}
+{{--                <li>{{$error}}</li>--}}
+{{--            @endforeach--}}
+{{--        @endif--}}
     <form  method="post" enctype="multipart/form-data" action="{{route('movies.save')}}">
+
         <div class="box-body">
             <div class="form-group">
                 <label for="exampleInputEmail1">Movie Title</label>
-                <input type="name" class="form-control"  placeholder="Name" name="title">
+                <input type="name" class="form-control @error('title') is-invalid @enderror"}}  placeholder="Name" name="title">
+{{--                @if($errors->has('title'))--}}
+{{--                    <p class="text-danger">{{$errors->first('title')}}</p>--}}
+{{--                @endif--}}
+                @error('title')
+                    <p class="text-danger">{{$errors->first('title')}}</p>
+                @enderror
             </div>
             <div class="form-group">
                 <label for="exampleInputEmail1">Movie Year</label>
