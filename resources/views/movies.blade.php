@@ -101,6 +101,7 @@
                                     <p>Year: {{$movie->year}}</p>
                                     <p>Rating: {{$movie->rating}}</p>
                                     <p>Description: {{$movie->description}}</p>
+                                    <p>Author: {{$movie->user['name']}}</p>
                                 </div>
                             </div>
                         </div>
