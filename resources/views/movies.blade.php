@@ -6,6 +6,13 @@
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
                     @auth
                         <a href="{{ url('/home') }}" class="text-sm text-gray-700 underline">Home</a>
+                        <a href="{{url('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit()">
+                            Logout
+                        </a>
+
+                        <form id="logout-form" action="{{route('logout')}}" method="POST" style="display: none">
+                            {{ csrf_field() }}
+                        </form>
                     @else
                         <a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Login</a>
 
