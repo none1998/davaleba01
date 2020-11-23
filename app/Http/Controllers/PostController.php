@@ -4,7 +4,9 @@
 namespace App\Http\Controllers;
 use App\Http\Requests\SavePostRequest;
 use App\Models\Movie;
+use App\Models\Tag;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class PostController extends Controller
 {
@@ -18,12 +20,15 @@ class PostController extends Controller
     }
 
     public function create(){
-        return view('create');
+        $tags = Tag::all();
+        return view('create', compact('tags'));
     }
 
     public function save(SavePostRequest $request){
         $movie = new Movie($request->all());
+        $movie->user_id = 1;
         $movie->save();
+        $movie->tags()->attach($request->tags);
         return redirect()->back();
     }
 

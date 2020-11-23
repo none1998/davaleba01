@@ -36,6 +36,14 @@
                 <label for="exampleInputEmail1">Movie Image Url</label>
                 <input type="name" class="form-control"  placeholder="Name" name="image">
             </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Tags</label>
+                <select name="tags[]" id="" multiple>
+                    @foreach($tags as $tag)
+                        <option value="{{$tag->id}}">{{$tag->name}}</option>
+                    @endforeach
+                </select>
+            </div>
         </div>
         @csrf
 {{--        <input type="hidden" name="_token"  id='csrf_toKen' value="{{ csrf_toKen() }}">--}}

@@ -109,9 +109,16 @@
                                     <p>Rating: {{$movie->rating}}</p>
                                     <p>Description: {{$movie->description}}</p>
                                     <p>Author: {{$movie->user['name']}}</p>
+                                    <p><h3>Tags</h3></p>
+                                @foreach($movie->tags as $tag)
+                                        <div>
+                                            <p><h4>{{$tag->name}}</h4></p>
+                                        </div>
+                                    @endforeach
                                 </div>
                             </div>
                         </div>
+
                     </div>
                     @endforeach
                 </div>

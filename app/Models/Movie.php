@@ -21,6 +21,10 @@ class Movie extends Model
         return $this->belongsTo(User::class);
     }
 
+    public function tags(){
+        return $this->belongsToMany(Tag::class);
+    }
+
     public function getMovies(){
         return Movie::all();
     }
